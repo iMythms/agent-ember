@@ -2,7 +2,7 @@
 
 **A minimal spark to make any AI coding agent stateful. Clone, point your agent, ignite.**
 
-Keep your agent's context warm across sessions. Agent Ember gives your AI persistent memory, allows it to take daily notes, and helps it build on past work. No heavy frameworks, no vector databases, no complex setups—just three markdown files and a git repository.
+Keep your agent's context warm across sessions. Agent Ember gives your AI persistent memory, allows it to take daily notes, and helps it build on past work. No heavy frameworks, no vector databases, no complex setups—just a few markdown files and a git repository.
 
 Works seamlessly with any AI coding agent: PI, OpenCode, Copilot, Codex, and more.
 
@@ -16,10 +16,20 @@ pi     # or opencode, copilot, codex, etc.
 
 That's it. Your agent reads the initial files, realizes it has been just ignited, and asks who you want it to be. You define its purpose. The spark catches, and it remembers forever.
 
+## Copy Into Existing Projects
+
+Agent Ember is designed to be copied into an existing project when you want that project's agent to become stateful.
+
+- Standard agents: copy `AGENTS.md`, `IDENTITY.md`, and `KNOWLEDGE.md`.
+- Claude Code: copy `AGENTS.md`, `IDENTITY.md`, `KNOWLEDGE.md`, and `CLAUDE.md`.
+
+`CLAUDE.md` is a compatibility shim for Claude Code, not a second memory system. It imports `AGENTS.md` so Claude Code loads the same Agent Ember bootstrap instructions while `AGENTS.md` remains the single source of truth.
+
 ## Memory Structure
 
 ```text
 AGENTS.md          ← The Spark (core instructions, do not edit)
+CLAUDE.md          ← Claude Code compatibility shim
 IDENTITY.md        ← Who this agent is (maintained by the agent)
 KNOWLEDGE.md       ← Index of all learned information (maintained by the agent)
 knowledge/         ← The solid fuel: facts about the world (mutable)
