@@ -127,9 +127,9 @@ Raw repo notes should not be mirrored wholesale by default.
 
 ## Initial Implementation Plan
 
-1. Add `.ember/config.json` with vault and sync settings.
-2. Define Markdown/frontmatter schemas for project, agent, decision, pattern, and daily notes.
-3. Build a local `ember sync --dry-run` command.
+1. Add `.ember/config.json` with vault and sync settings. Done 2026-06-17.
+2. Define Markdown/frontmatter schemas for project, agent, decision, pattern, and daily notes. Done 2026-06-17.
+3. Build a local `ember sync --dry-run` command. Initial dependency-free script added 2026-06-17 as `scripts/ember-sync.mjs`.
 4. Generate only the project note first.
 5. Add identity and recent-note summaries.
 6. Add decision and pattern extraction after deterministic project publishing is stable.

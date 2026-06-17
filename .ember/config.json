@@ -1,0 +1,20 @@
+{
+  "project": "agent-ember",
+  "agent": "Ember",
+  "repoPath": "/Users/mytham/Developer/agent-ember",
+  "repoRemote": "git@github.com:iMythms/agent-ember.git",
+  "vaultPath": null,
+  "obsidianFolder": "00-Agent-Ember",
+  "sync": {
+    "identity": true,
+    "knowledge": true,
+    "notes": "summarized",
+    "decisions": true,
+    "patterns": false
+  },
+  "writePolicy": {
+    "mode": "generated-blocks-only",
+    "preserveHumanSections": true,
+    "requireDryRunBeforeWrite": true
+  }
+}
