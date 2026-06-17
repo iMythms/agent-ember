@@ -1,8 +1,8 @@
 {
-  "project": "agent-ember",
-  "agent": "Ember",
-  "repoPath": "/Users/mytham/Developer/agent-ember",
-  "repoRemote": "git@github.com:iMythms/agent-ember.git",
+  "project": "your-project",
+  "agent": "Agent Ember",
+  "repoPath": "/absolute/path/to/your-project",
+  "repoRemote": "git@github.com:you/your-project.git",
   "vaultPath": null,
   "obsidianFolder": "00-Agent-Ember",
   "sync": {

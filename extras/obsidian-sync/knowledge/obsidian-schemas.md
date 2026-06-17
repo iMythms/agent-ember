@@ -4,7 +4,7 @@ Updated: 2026-06-17
 
 ## Purpose
 
-Define the first stable note contracts for publishing Agent Ember project memory into Obsidian without treating the vault as a raw mirror of the repo.
+Define the note contracts for publishing Agent Ember project memory into Obsidian without treating the vault as a raw mirror of the repo.
 
 ## Common Rules
 
@@ -38,11 +38,11 @@ Required properties:
 type: project
 source: agent-ember
 project: agent-ember
-title: Agent Ember
-repo: git@github.com:iMythms/agent-ember.git
-local_path: /Users/mytham/Developer/agent-ember
+title: Example Project
+repo: git@github.com:you/example-project.git
+local_path: /absolute/path/to/example-project
 status: active
-agent_identity: Ember
+agent_identity: Agent Ember
 last_synced: 2026-06-17
 tags:
   - agent-ember
@@ -68,9 +68,9 @@ Required properties:
 
 ```yaml
 type: agent
-agent: Ember
-project: agent-ember
-source_repo: git@github.com:iMythms/agent-ember.git
+agent: Agent Ember
+project: example-project
+source_repo: git@github.com:you/example-project.git
 last_synced: 2026-06-17
 tags:
   - agent-ember

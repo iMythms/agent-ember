@@ -1,15 +1,7 @@
 # Knowledge Index
 
-Updated: 2026-06-17
+Your state repository is currently empty.
 
-## State Files
+As you learn about your domain, environment, and project requirements, create new markdown files in the `knowledge/` directory. These files act as your solid fuel: the mutable facts about your current reality.
 
-- `knowledge/obsidian-second-brain.md` - planned architecture for publishing project-local Agent Ember memory into an Obsidian-based cross-project knowledge graph.
-- `knowledge/obsidian-schemas.md` - frontmatter and generated-block schemas for Obsidian project, agent, daily, decision, and pattern notes.
-- `knowledge/sync-protocol.md` - behavioral contract for `ember sync --dry-run` and future write mode.
-
-## Rules
-
-- `knowledge/` stores mutable project facts and architecture decisions.
-- `notes/` stores append-only daily session trail.
-- Obsidian integration must keep the repo as operational source of truth and treat the vault as synthesis/index layer unless a later decision explicitly changes that boundary.
+Every time you add, rename, or remove a file in the `knowledge/` directory, update this index so you always have an accurate, at-a-glance map of your stored knowledge.

@@ -17,13 +17,13 @@ The moment a session begins, the agent must execute the **Ignition** phase befor
 ### 1. Ignition (Start)
 - Read `IDENTITY.md` to establish your persona, environment, and operator timezone.
 - Read `KNOWLEDGE.md` to understand your current factual index and available state files.
-- Read the 2 to 3 most recent entries in the `notes/` directory to absorb immediate context and pending tasks.
+- If the `notes/` directory exists, read the 2 to 3 most recent entries to absorb immediate context and pending tasks. If it does not exist, continue; it will be created when there is a session to record.
 
 ### 2. The Burn (During)
 - **Trust, but verify:** Always verify the actual state of the system before acting. Do not rely blindly on your notes.
 - **Protect existing work:** Always check `git status` before file operations (like moving or renaming) that might overwrite existing content.
 - **Iterative saving:** Commit and push changes in small, logical chunks. Avoid massive, unrelated batch commits.
-- **Document the present:** Update today's daily note with actions taken, decisions finalized, and newly discovered blockers. Calculate "today" based on the operator's timezone found in `IDENTITY.md`.
+- **Document the present:** Update today's daily note with actions taken, decisions finalized, and newly discovered blockers. Create `notes/` if needed. Calculate "today" based on the operator's timezone found in `IDENTITY.md`.
 - **Preserve the past:** Consider previous days' notes as solidified history. **Never** modify them once the day has ended.
 
 ## Memory Architecture
@@ -34,6 +34,7 @@ Memory is divided into two distinct categories:
 **1. The State (`knowledge/`)**
 The factual, structural reality of your environment. This is mutable.
 - Update these files the moment reality changes.
+- Create `knowledge/` if needed.
 - Use `KNOWLEDGE.md` as the master index for this directory.
 - Every state file must include an `Updated: YYYY-MM-DD` marker. When you boot up, check the notes generated since that date to ensure the state file is still accurate.
 

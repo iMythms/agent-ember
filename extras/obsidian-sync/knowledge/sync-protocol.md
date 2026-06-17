@@ -4,7 +4,7 @@ Updated: 2026-06-17
 
 ## Purpose
 
-Define the first behavior contract for `ember sync` before implementation. The command publishes curated project memory from the repo into an Obsidian vault.
+Define the behavior contract for `scripts/ember-sync.mjs`. The command publishes curated project memory from the repo into an Obsidian vault.
 
 ## Command Shape
 
@@ -13,7 +13,7 @@ scripts/ember-sync.mjs --dry-run
 scripts/ember-sync.mjs --write
 ```
 
-Version 1 must default to dry-run unless `--write` is explicitly provided.
+Version 1 defaults to dry-run unless `--write` is explicitly provided.
 
 ## Inputs
 
@@ -29,8 +29,8 @@ Under the configured Obsidian folder:
 
 ```text
 00-Agent-Ember/
-  Projects/Agent Ember.md
-  Agents/Ember.md
+  Projects/Example Project.md
+  Agents/Agent Ember.md
   Daily/YYYY-MM-DD.md
 ```
 
@@ -65,11 +65,12 @@ vault: not configured
 sources:
   read IDENTITY.md
   read KNOWLEDGE.md
-  read knowledge/obsidian-second-brain.md
+  read knowledge/obsidian-schemas.md
+  read knowledge/sync-protocol.md
   read notes/2026-06-17.md
 planned:
-  create 00-Agent-Ember/Projects/Agent Ember.md
-  create 00-Agent-Ember/Agents/Ember.md
+  create 00-Agent-Ember/Projects/Example Project.md
+  create 00-Agent-Ember/Agents/Agent Ember.md
   create 00-Agent-Ember/Daily/2026-06-17.md
 blocked:
   vaultPath is null
